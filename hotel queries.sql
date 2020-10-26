@@ -6,6 +6,7 @@ USE hoteldata;
 
 SELECT 
 	r.Name,
+    r.EndDate,
     rr.RoomNumber
 FROM Reservation r
 INNER JOIN ReservationRoom rr ON r.ReservationId = rr.ReservationId
@@ -81,4 +82,4 @@ SELECT
     g.Address,
     g.PhoneNumber
 FROM Guest g
-WHERE g.PhoneNumber = '4144842373';
+WHERE g.PhoneNumber = '5555555555';
